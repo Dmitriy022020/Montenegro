@@ -4,10 +4,17 @@ class Footer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      mail: ''
     }
   };
+  mailChange = (event) => {
+    this.setState({mail: event.target.value})
+  }
+  email = () => {
+    alert(`Письмо отправлено на ${this.state.mail}`)
+  }
   render() {
+
     return (
       <div className="footer">
         <div className='section'>
@@ -19,8 +26,8 @@ class Footer extends Component {
           <div className="signup">
             <form className="container">
               <label>Подписаться на обновления</label>
-              <input type="email" placeholder="osteraft@mail.ru"/>
-              <input className="button-primary" type="submit" id="sub" value="ОТПРАВИТЬ" />
+              <input type="email" placeholder="osteraft@mail.ru" onChange={this.mailChange} value={this.state.mail}/>
+              <input className="button-primary" type="submit" onClick={this.email} value="ОТПРАВИТЬ" />
             </form>
           </div>
         </div>

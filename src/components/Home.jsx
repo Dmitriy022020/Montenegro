@@ -61,6 +61,7 @@ class Home extends Component {
           воспоминаний из отпуска!</p>
           </div>
         </div>
+
       </div>
     )
   };

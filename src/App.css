@@ -219,7 +219,7 @@ label>.label-body {
 /* UP
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#arrowTop {
+.top {
     height: 30px;
     width: 60px;
     color: rgb(0, 0, 0);
@@ -229,8 +229,12 @@ label>.label-body {
     cursor: pointer;
     border-radius: 5px 5px;
     background-color: rgba(255, 214, 214, 0.5);
-    box-shadow: 0 0 5px 3px rgb(255, 0, 0);
+    box-shadow: 0 0 5px 3px rgb(56, 56, 56);
     text-align: center;
     font-weight: bold;
     line-height: 30px;
+}
+.top:hover {
+    background-color: rgba(255, 214, 214, 0.8);
+
 }
