@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.header {
+    padding: 0;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, .1) 15%), url(assets/Montenegro_Houses_Coast_Boats_Budva_Bay.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav,
+.footer .section,
+.footer form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.nav{
+    justify-content: space-between;
+}
+.nav li,
+.nav .dropdown {
+    width: 20%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a {
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    margin: 0;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: 'El Messiri', Arial, Helvetica, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    height: 38px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .6);
+    border: none;
+    width: 100%;
+}
+
+.button:hover,
+.button:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+    box-shadow: 0 0 6px 3px rgba(100, 100, 100, 0.8);
+}
+
+.dropdown-content li {
+    background-color: rgba(160, 159, 159, 0.8);
+}
+
+.dropdown-content li:hover {
+    background-color: rgba(212, 209, 209, 0.8)
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+.footer .copyright {
+    flex: 1 1 300px;
+    margin: 15px;
+}
+
+.footer .signup {
+    flex: 1 1 300px;
+    margin: 15px;
+}
+
+.signup label {
+    width: 100%;
+}
+
+.signup input[type="email"] {
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.signup input[type="submit"] {
+    border-radius: 0 4px 4px 0;
+    padding: 0 10px;
+}
+
+.button-primary {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB;
+}
+
+input,
+textarea,
+select {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #33C3F0;
+    outline: 0;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+label>.label-body {
+    display: inline-block;
+    margin-left: .5rem;
+    font-weight: normal;
+}
+
+@media (max-width: 500px) {
+    .nav li,
+    .nav .dropdown {
+        width: 100%;
+        margin-bottom: 2px;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1 {
+        font-size: 2.0em;
+    }
+}
+
+
+/* UP
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#arrowTop {
+    height: 30px;
+    width: 60px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 5px 5px;
+    background-color: rgba(255, 214, 214, 0.5);
+    box-shadow: 0 0 5px 3px rgb(255, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}

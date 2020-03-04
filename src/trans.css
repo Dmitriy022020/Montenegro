@@ -1,0 +1,103 @@
+h5 { 
+  font-family: 'El Messiri', Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 4em;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  white-space: wrap;
+  text-align: center;
+  letter-spacing: 5px;
+}
+h4 {
+  font-size: 2.5em;
+  line-height: 1;
+  letter-spacing: -.1rem;
+  font-family: 'El Messiri', Arial, Helvetica, sans-serif;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  text-align: center;
+
+}
+.inner {
+  padding: 15px;
+  letter-spacing: 1px;
+}
+.inner p {
+  font-size: 1.2em;
+}
+.container-trans {  
+  background-image: url(assets/Porto-Montenegro.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  perspective: 1200px;
+  position: relative;
+  margin: 20px auto;
+  flex: 0 1 600px;
+}
+.button-trans {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+  padding: 20px;
+  transition: .4s linear;
+}
+.open:hover, .close:hover {
+  color: white;
+}
+.open, .close {
+  color: #999;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.flipper {
+  border: 15px solid rgba(255,255,255,0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: .7s linear;  
+}
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  backface-visibility: hidden;
+}
+.front {
+  z-index: 2;
+  transform: rotateX(0deg);
+}
+.back {
+  transform: rotateX(-180deg);
+  color: white;
+}
+.flipper:target {
+  transform: rotateX(180deg);
+}
+
+@media (max-width: 500px) {
+  .container-trans {  
+    flex: 0 1 600px;
+  }
+  .front h5 {
+    font-size: 2.5em;
+  }
+  .back h4 {
+    display: none;
+  }
+  .inner p {
+    font-size: 1em;
+  }
+  
+}
