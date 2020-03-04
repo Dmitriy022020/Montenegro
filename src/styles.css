@@ -30,11 +30,6 @@ h2 {
     text-align: center;
 }
 
-@media (max-width: 550px) {
-    h2 {
-        font-size: 2em;
-    }
-}
 
 p,
 .boxes li {
@@ -132,4 +127,18 @@ form input {
 }
 .ya:hover {
     box-shadow: 0 0 3px 3px rgb(148, 148, 148);
+}
+
+
+@media (max-width: 550px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .map {
+        width: 225px;
+        height: 300px;
+    }
 }

@@ -6,6 +6,7 @@ body {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
+    width: 100%;
 }
 
 .header {
@@ -211,6 +212,7 @@ label>.label-body {
     h1 {
         font-size: 2.0em;
     }
+    
 }
 
 
